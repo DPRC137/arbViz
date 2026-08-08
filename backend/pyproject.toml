@@ -1,0 +1,21 @@
+[project]
+name = "arbviz-backend"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "uvicorn[standard]>=0.32,<1",
+  "websockets>=14,<16",
+  "orjson>=3.10,<4",
+  "pydantic>=2.10,<3",
+  "pydantic-settings>=2.7,<3",
+  "httpx>=0.28,<1",
+  "uvloop>=0.21; sys_platform == 'linux'",
+]
+
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["app", "app.api", "app.engine", "app.exchanges", "app.websocket"]

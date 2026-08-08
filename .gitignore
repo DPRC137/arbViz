@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Frontend build output
+frontend/dist/
+dist/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+build/
+*.egg-info/
+
+# TypeScript incremental build info
+*.tsbuildinfo
+
+# Environment files (keep the tracked example)
+.env
+.env.*
+!.env.example
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Local tooling / agent state
+.agents/
+.codex/
+.hallmark/
